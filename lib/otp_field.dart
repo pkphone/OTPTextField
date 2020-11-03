@@ -103,11 +103,13 @@ class _OTPTextFieldState extends State<OTPTextField> {
       _textControllers[i] = new TextEditingController();
 
     return Container(
+      color: Colors.white,
       width: widget.fieldWidth,
       child: TextField(
         controller: _textControllers[i],
         keyboardType: widget.keyboardType,
         textAlign: TextAlign.center,
+        cursorColor: Color(0xFF1D5A8E),
         maxLength: 1,
         style: widget.style,
         focusNode: _focusNodes[i],
