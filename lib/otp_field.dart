@@ -114,11 +114,6 @@ class _OTPTextFieldState extends State<OTPTextField> {
         style: widget.style,
         focusNode: _focusNodes[i],
         obscureText: widget.obscureText,
-        decoration: InputDecoration(
-            counterText: "",
-            border: widget.fieldStyle == FieldStyle.box
-                ? OutlineInputBorder(borderSide: BorderSide(width: 2.0))
-                : null),
         onChanged: (String str) {
           // Check if the current value at this position is empty
           // If it is move focus to previous text field.
